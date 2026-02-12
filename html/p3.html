@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML3</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+  </head>
+
+  <body>
+    <div class="modal_overlay">
+      <div class="modal">
+        <button class="modal_close" type="button"></button>
+        <div class="modal_text">
+          <h4>
+            &lt;a href=&quot;https://brstu.ru/&quot;&gt;Универ
+            №1&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+            <br />
+            &lt;img src=&quot;../assets/img/the cat.jpg&quot; alt=&quot;Милый
+            котик&quot;&gt;
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="task">
+        <p>
+          Для создания интерактивных элементов на веб-странице, таких как ссылки
+          и изображения, HTML предоставляет специальные теги: &lt;a&gt; для
+          ссылок и &lt;img&gt; для картинок. С их помощью можно добавить на
+          страницу возможность перехода на другие сайты или разделы вашего
+          сайта, а также размещать изображения. <br /><br />
+          Тег &lt;a&gt; (ссылка): Используется для создания гиперссылок. Атрибут
+          href указывает URL-адрес, куда нужно перейти при клике на ссылку.
+          <br />
+          Пример: &lt;a href=&quot;https://example.com&quot;&gt;Перейти на
+          Example&lt;/a&gt;
+          <br /><br />
+          Тег &lt;img&gt; (картинка): Используется для добавления изображений на
+          страницу. Атрибут src указывает путь к файлу картинки, а alt —
+          текстовое описание изображения (важно для доступности). <br />
+          Пример: &lt;img src=&quot;https://example.com/image.jpg&quot;
+          alt=&quot;Описание картинки&quot;&gt;
+        </p>
+        <h2>Задание 1</h2>
+        <p>Добавьте на свою страницу следующие элементы:</p>
+        <p>
+          Ссылку на ваш любимый сайт (например, сайт с играми или
+          образовательный ресурс). Укажите название ссылки, чтобы было понятно,
+          куда она ведет. <br />
+          Картинку, которая вам нравится. Вы можете найти картинку в интернете и
+          скопировать её прямую ссылку.
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <button id="check-button">Проверить</button>
+      </div>
+      <div class="preview" id="preview"></div>
+
+      <button class="btn-modal">Подсказка</button>
+    </main>
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/css/css.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

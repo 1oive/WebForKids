@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>css3</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="../codemirror/lib/codemirror.js"></script>
+  <script src="../codemirror/mode/javascript/javascript.js"></script>
+  <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+</head>
+
+<body>
+  <div class="modal_overlay">
+    <div class="modal">
+      <button class="modal_close" type="button"></button>
+      <div class="modal_text">
+        .box1 { <br />
+        margin-left: 10px; <br />
+        margin-bottom: 20px; /* Добавленный отступ */ } <br />
+        .box2 { <br />
+        padding: 20px; /* Добавленное внутренний отступ */ }
+      </div>
+    </div>
+  </div>
+
+  <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+  <main>
+    <div class="task">
+      <p>
+        Отступы в CSS позволяют создавать пространство между элементами на
+        странице, делая дизайн более airy (воздушным) и организованным.
+        Существует два основных типа отступов: margin и padding. Они помогают
+        контролировать расстояние между элементами и их содержимым.<br /><br />
+
+        1. Margin добавляет пространство снаружи элемента, не увеличивая его
+        сам. <br />
+        2. Padding добавляет пространство внутри элемента, увеличивая его
+        размер. <br />
+        Можно задавать как одно значение для всех сторон (padding: 10px;), так
+        и отдельно (padding-bottom: 10px;)
+        <br /><br />
+      </p>
+      <h2>Задание 1</h2>
+      <p>
+        На экране уже есть два квадрата (.box1, .box2), расположенные друг над
+        другом. Ваша задача — использовать свойства margin и padding, чтобы:
+        1.Увеличить расстояние между двумя квадратами (используйте margin).
+        2.Добавить внутреннее пространство внутри второго квадрата, чтобы
+        текст внутри него стал дальше от границы (используйте padding).
+      </p>
+    </div>
+    <div class="editor">
+      <textarea id="editor"></textarea>
+      <button id="check-button">Проверить</button>
+    </div>
+    <div class="preview" id="preview">
+      <div class="box1" style="width: 100px; height: 100px; background-color: red"></div>
+      <div class="box2" style="
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+          ">
+        Текст
+      </div>
+    </div>
+
+    <button class="btn-modal">Подсказка</button>
+  </main>
+
+  <script src="../codemirror/lib/codemirror.js"></script>
+  <script src="../codemirror/mode/css/css.js"></script>
+  <script src="../codemirror/mode/javascript/javascript.js"></script>
+  <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

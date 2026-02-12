@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css7</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+  </head>
+
+  <body>
+    <div class="modal_overlay">
+      <div class="modal">
+        <button class="modal_close" type="button"></button>
+        <div class="modal_text">
+          .container-test {<br />
+          display: flex; /* Активируем Flexbox */<br />
+          flex-direction: row; /* Располагаем элементы в строку */<br />
+          gap: 20px; /* Добавляем пространство между элементами */<br />
+          }
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="task">
+        <p>
+          Flexbox — это мощный инструмент CSS, который позволяет создавать
+          гибкие и адаптивные макеты. С его помощью можно легко выравнивать
+          элементы, располагать их в строку или столбец, а также контролировать
+          пространство между ними. Flexbox особенно полезен для создания
+          современных интерфейсов, где важна точная организация контента.<br /><br />
+
+          Контейнер - это родительский элемент, которому мы применяем display:
+          flex;. Все дочерние элементы внутри него становятся "элементами Flex".
+          <br />
+          Элементы Flex - это дочерние элементы внутри контейнера. Их
+          расположение и поведение зависят от настроек контейнера.
+          <br /><br />
+          Основные свойства:
+          <br />
+          flex-direction: <br />
+          - row: элементы располагаются в строку (слева направо, по
+          умолчанию).<br />
+          - column: элементы располагаются в столбец (сверху вниз).
+          <br />
+          gap: <br />
+          - Задаёт пространство между элементами Flexbox.
+          <br />
+          <br /><br />
+        </p>
+        <h2>Задание 1</h2>
+        <p>
+          На экране уже есть &lt;div&gt; с классом .container-test, который
+          имеет два блока, расположенных друг под другом: .box-child1 и
+          .box-child2. Ваша задача — преобразить этот контейнер в
+          Flexbox-контейнер и разместить два блока в строку. Также добавьте
+          пространство между блоками с помощью свойства gap.
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <button id="check-button">Проверить</button>
+      </div>
+      <div class="preview" id="preview" style="position: relative">
+        <div class="container-test">
+          <div
+            class="box-child1"
+            style="height: 100px; width: 100px; background-color: green"
+          ></div>
+          <div
+            class="box-child2"
+            style="height: 100px; width: 100px; background-color: red"
+          ></div>
+        </div>
+      </div>
+
+      <button class="btn-modal">Подсказка</button>
+    </main>
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/css/css.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

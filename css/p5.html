@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>css5</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="../codemirror/lib/codemirror.js"></script>
+  <script src="../codemirror/mode/javascript/javascript.js"></script>
+  <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+</head>
+
+<body>
+  <div class="modal_overlay">
+    <div class="modal">
+      <button class="modal_close" type="button"></button>
+      <div class="modal_text">
+        .box { <br />
+        position: absolute; <br />
+        right: 0;<br />
+        }
+      </div>
+    </div>
+  </div>
+
+  <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+  <main>
+    <div class="task">
+      <p>
+        Позиционирование в CSS позволяет точно контролировать расположение
+        элементов на странице. Это особенно полезно, когда нужно разместить
+        элементы в определённых местах, например, в углу экрана или
+        относительно других элементов. Существует несколько значений свойства
+        position, но мы рассмотрим два основных: relative и absolute.<br /><br />
+
+        1. position: relative: Элемент позиционируется относительно своего
+        обычного положения в потоке документа. Изменяя свойства top, right,
+        bottom, left, можно сдвинуть элемент от его первоначального места.
+        <br />
+        2. position: absolute: Элемент позиционируется относительно ближайшего
+        родительского элемента с position: relative. Также используются
+        свойства top, right, bottom, left для точного позиционирования. <br />
+
+        <br /><br />
+      </p>
+      <h2>Задание 1</h2>
+      <p>
+        На экране уже есть &lt;div&gt; .box, который необходимо переместить в
+        правый верхний угол страницы. Для этого используйте свойство position:
+        absolute; и соответствующие значения для top и right.
+      </p>
+    </div>
+    <div class="editor">
+      <textarea id="editor"></textarea>
+      <button id="check-button">Проверить</button>
+    </div>
+    <div class="preview" id="preview" style="position: relative">
+      <div class="box" style="width: 100px; height: 100px; background-color: red"></div>
+    </div>
+
+    <button class="btn-modal">Подсказка</button>
+  </main>
+
+  <script src="../codemirror/lib/codemirror.js"></script>
+  <script src="../codemirror/mode/css/css.js"></script>
+  <script src="../codemirror/mode/javascript/javascript.js"></script>
+  <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

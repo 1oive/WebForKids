@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML4</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+  </head>
+
+  <body>
+    <div class="modal_overlay">
+      <div class="modal">
+        <button class="modal_close" type="button"></button>
+        <div class="modal_text">
+          &lt;h1&gt;Список уроков&lt;/h1&gt; <br />
+          &lt;ul&gt;<br />
+          &lt;li&gt;Математика&lt;/li&gt; <br />
+          &lt;li&gt;Русский язык&lt;/li&gt;<br />
+          &lt;li&gt;Информатика&lt;/li&gt; <br />
+          &lt;li&gt;Литература&lt;/li&gt;<br />
+          &lt;/ul&gt;<br />
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="task">
+        <p>
+          Списки в HTML позволяют структурировать информацию, делая её более
+          читабельной и понятной. Существует два основных типа списков:
+          неупорядоченные (bullet points) и упорядоченные (нумерованные).
+          Используя эти списки, можно создавать меню, инструкции, списки покупок
+          и многое другое. <br /><br />
+          • Неупорядоченный список (&lt;li&gt;):<br />
+          Используется для создания списка элементов без конкретного порядка.
+          Каждый элемент списка помечается тегом &lt;li&gt; (list item).
+          <br /><br />
+          • Упорядоченный список (&lt;ol&gt;):<br />
+          Используется для создания нумерованного списка, где порядок элементов
+          имеет значение. Также каждый элемент списка обозначается тегом
+          &lt;li&gt;.
+        </p>
+        <h2>Задание 1</h2>
+        <p>
+          Создайте список своих сегоднящних занятий: <br />
+          Например: уроки математики, русского, инорматики и литературы.
+          Используйте тот список, который понравится больше.
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <button id="check-button">Проверить</button>
+      </div>
+      <div class="preview" id="preview"></div>
+
+      <button class="btn-modal">Подсказка</button>
+    </main>
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/css/css.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

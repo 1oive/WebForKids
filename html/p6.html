@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML6</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+  </head>
+
+  <body>
+    <div class="modal_overlay">
+      <div class="modal">
+        <button class="modal_close" type="button"></button>
+        <div class="modal_text">
+          &lt;h1&gt;Как вы любите проводить время?&lt;/h1&gt; <br />
+          &lt;form action=&quot;/send-results&quot; method=&quot;POST&quot;&gt;
+          <br />
+
+          &lt;label&gt;1. Выберите свои любимые
+          занятия:&lt;/label&gt;&lt;br&gt;&lt;br&gt; &lt;input
+          type=&quot;checkbox&quot; id=&quot;activity1&quot;
+          name=&quot;activities&quot; value=&quot;READING&quot;&gt; <br />
+          &lt;label for=&quot;activity1&quot;&gt;Чтение
+          книг&lt;/label&gt;&lt;br&gt; <br />
+          &lt;input type=&quot;checkbox&quot; id=&quot;activity2&quot;
+          name=&quot;activities&quot; value=&quot;GAMING&quot;&gt; <br />
+          &lt;label for=&quot;activity2&quot;&gt;Игры&lt;/label&gt;&lt;br&gt;
+          <br />
+          &lt;input type=&quot;checkbox&quot; id=&quot;activity3&quot;
+          name=&quot;activities&quot; value=&quot;SPORT&quot;&gt; <br />
+          &lt;label
+          for=&quot;activity3&quot;&gt;Спорт&lt;/label&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+          <br />
+
+          &lt;label&gt;2. Сколько часов хочется за ними
+          проводить?&lt;/label&gt;&lt;br&gt;&lt;br&gt; <br />
+          &lt;input type=&quot;checkbox&quot; id=&quot;activity1&quot;
+          name=&quot;activities&quot; value=&quot;TWO&quot;&gt; <br />
+          &lt;label for=&quot;activity1&quot;&gt;2 часа&lt;/label&gt;&lt;br&gt;
+          <br />
+          &lt;input type=&quot;checkbox&quot; id=&quot;activity2&quot;
+          name=&quot;activities&quot; value=&quot;FOUR&quot;&gt; <br />
+          &lt;label for=&quot;activity2&quot;&gt;4 часа&lt;/label&gt;&lt;br&gt;
+          <br />
+          &lt;input type=&quot;checkbox&quot; id=&quot;activity3&quot;
+          name=&quot;activities&quot; value=&quot;WHOLEDAY&quot;&gt; <br />
+          &lt;label for=&quot;activity3&quot;&gt;весь
+          день!!!&lt;/label&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt; <br />
+
+          &lt;/form&gt;
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="task">
+        <p>
+          Формы в HTML позволяют создавать интерактивные элементы на сайте, с
+          помощью которых пользователи могут отправлять данные. Это могут быть
+          текстовые поля для ввода информации, выпадающие списки, флажки
+          (checkbox), кнопки и многое другое. Формы широко используются для
+          регистрации, опросов, заказов и других целей.<br />
+          <br />
+          • Тег (&lt;form&gt;): Обозначает форму. Все её элементы помещаются
+          внутрь этого тега.<br />
+          • Атрибут (action): Указывает URL-адрес, куда будут отправлены данные
+          формы после её отправки.<br />
+          • Атрибут (method): Определяет способ отправки данных (GET или
+          POST).<br />
+          Элементы форм:<br />
+          • Текстовое поле (&lt;input type="text"&gt;): Для ввода текста.<br />
+          • Чекбокс (&lt;input type="checkbox"&gt;): Для выбора нескольких
+          вариантов.<br />
+          • Радио-кнопка (&lt;input type="radio"&gt;): Для выбора одного
+          варианта из нескольких.<br />
+          • Кнопка отправки (&lt;button type="submit"&gt;): Для отправки данных
+          формы.<br />
+          • Метка (&lt;label&gt;): Добавляет описание к элементу формы, делая
+          его более понятным для пользователя.<br />
+        </p>
+        <h2>Задание 1</h2>
+        <p>
+          Создайте небольшой опрос о свободном времени. Спросите у пользователя
+          об его любимых занятиях и так далее... Сделайте как минимум 2 вопроса.
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <button id="check-button">Проверить</button>
+      </div>
+      <div class="preview" id="preview"></div>
+
+      <button class="btn-modal">Подсказка</button>
+    </main>
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/css/css.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

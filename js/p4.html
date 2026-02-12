@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS4</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+  </head>
+
+  <body>
+    <div class="modal_overlay">
+      <div class="modal">
+        <button class="modal_close" type="button"></button>
+        <div class="modal_text">
+          for (let i = 1; i &lt;= 10; i++) {<br />
+          document.write(i + ", "); <br />
+          }
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="task">
+        <p>
+          Циклы в JavaScript позволяют выполнять одни и те же действия
+          многократно, не повторяя код. Это особенно полезно, когда нужно
+          обработать большое количество данных или выполнить действие
+          определённое количество раз. В этом уроке мы познакомимся с циклом
+          for.
+        </p>
+        <p>
+          Цикл for используется для выполнения блока кода указанное количество
+          раз. Он состоит из трёх частей: инициализация (тут задается
+          переменная-счетчик), условие (при котором цикл будет работать) и
+          изменение значения переменной-счетчика на каждом новом шаге.
+        </p>
+        <br />
+        <p>
+          Пример: for (let i = 1; i &lt;= 10; i++) { <br />
+          console.log(i);<br />
+          }
+        </p>
+
+        <br /><br />
+        <h2>Задание 1</h2>
+        <p>
+          Ваша задача — написать программу, которая выводит числа от 1 до 10 на
+          экран с помощью цикла for. Каждое число должно быть отделено.
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <button id="check-button">Проверить</button>
+      </div>
+      <div class="preview" id="preview"></div>
+
+      <button class="btn-modal">Подсказка</button>
+    </main>
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/css/css.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

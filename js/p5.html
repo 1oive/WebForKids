@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS5</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+  </head>
+
+  <body>
+    <div class="modal_overlay">
+      <div class="modal">
+        <button class="modal_close" type="button"></button>
+        <div class="modal_text">console.log("Привет!");</div>
+      </div>
+    </div>
+
+    <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="task">
+        <p>
+          Консоль браузера — это мощный инструмент, который позволяет
+          разработчикам тестировать и отлаживать код JavaScript. С её помощью
+          можно выполнять команды, проверять результаты работы программы и
+          выводить сообщения для контроля процесса выполнения. Одной из самых
+          распространённых функций консоли является использование метода
+          console.log(), который помогает вывести любую информацию на экран
+          консоли.
+        </p>
+        <p>
+          В разных браузерах можно зайти в консоль. Способы немного отличаются,
+          но смысл один: нажать ПКМ на свободном месте страницы и выбрать
+          раздел, который зависит от браузера, - "Просмотреть код",
+          "Ислледовать" или "Инспектировать".
+        </p>
+        <br />
+        <p>
+          Метод console.log() используется для вывода информации в консоль
+          браузера. Это может быть текст, число, объект или даже результат
+          выполнения какого-либо выражения.
+        </p>
+
+        <br /><br />
+        <h2>Задание 1</h2>
+        <p>
+          Ваша задача — открыть консоль браузера и вывести в неё сообщение
+          "Привет!" с помощью метода console.log(). После этого проверьте
+          результат прямо в консоли.
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <button id="check-button">Проверить</button>
+      </div>
+      <div class="preview" id="preview">
+        <p>
+          Зайди в консоль) ПКМ -> "Просмотреть код", "Ислледовать" или
+          "Инспектировать".
+        </p>
+      </div>
+
+      <button class="btn-modal">Подсказка</button>
+    </main>
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/css/css.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

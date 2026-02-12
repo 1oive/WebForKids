@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+  </head>
+
+  <body>
+    <div class="modal_overlay">
+      <div class="modal">
+        <button class="modal_close" type="button"></button>
+        <div class="modal_text">
+          let num1 = 20; // Первое число <br />
+          let num2 = 25; // Второе число<br />
+          // Складываем переменные, сохраняем в переменную<br />
+          let sum = num1 + num2;<br />
+          // Выводим результат на экран<br />
+          document.write("Сумма: " + sum);
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="task">
+        <p>
+          Переменные в JavaScript — это контейнеры для хранения данных. С их
+          помощью можно сохранять значения (например, числа или строки) и
+          использовать их позже в программе. Операции с переменными позволяют
+          выполнять вычисления, такие как сложение, вычитание, умножение и
+          деление. Это основа любого программирования, и именно с этого мы
+          начнем изучение JavaScript.
+        </p>
+        <p>
+          Переменная — это место в памяти компьютера, где можно хранить
+          значение. Перед использованием переменной её нужно объявить с помощью
+          ключевых слов let, const или var.
+        </p>
+        <br />
+        <p>
+          • let: Используется для объявления переменной, значение которой может
+          меняться.
+        </p>
+        <p>
+          • const: Используется для объявления константы, значение которой
+          нельзя изменить после присвоения.
+        </p>
+        <p>
+          • var: Устаревший способ объявления переменных, но всё ещё работает.
+        </p>
+        <p>
+          Основные математические действия: сложение (+), вычитание (-),
+          умножение (*), деление (/).
+        </p>
+        <br /><br />
+        <h2>Задание 1</h2>
+        <p>
+          Ваша задача — создать две переменные, присвоить им числовые значения,
+          сложить их и вывести результат на экран с помощью document.write.
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <button id="check-button">Проверить</button>
+      </div>
+      <div class="preview" id="preview"></div>
+
+      <button class="btn-modal">Подсказка</button>
+    </main>
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/css/css.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

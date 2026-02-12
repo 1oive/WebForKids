@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>css2</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="../codemirror/lib/codemirror.js"></script>
+  <script src="../codemirror/mode/javascript/javascript.js"></script>
+  <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+</head>
+
+<body>
+  <div class="modal_overlay">
+    <div class="modal">
+      <button class="modal_close" type="button"></button>
+      <div class="modal_text">
+        .text-test { <br />
+        font-size: 20px; /* Размер текста */<br />
+        font-style: italic; /* Курсив */<br />
+        color: green; /* Цвет текста */<br />
+        background-color: lightgray; /* Цвет фона */<br />
+        }
+      </div>
+    </div>
+  </div>
+
+  <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+  <main>
+    <div class="task">
+      <p>
+        Тег &lt;p&gt; используется для создания абзацев текста на
+        веб-странице. С помощью CSS можно стилизовать этот текст, меняя его
+        внешний вид: размер шрифта, цвет, стиль (жирный, курсив), а также фон
+        за текстом. Это позволяет сделать текст более привлекательным и
+        удобным для чтения.<br /><br />
+        Основные свойства для стилизации текста: <br />
+        1. font-family: Указывает название шрифта. Например: 'Arial', 'Times
+        New Roman'. <br />
+        2. font-size: Задаёт размер шрифта. Можно указывать в пикселях (px),
+        процентах или других единицах. <br />
+        3. font-style: Определяет стиль шрифта. Возможные значения: normal,
+        italic, oblique.<br />
+        4. font-weight: Задаёт толщину шрифта. Например: normal, bold, lighter
+        или числовые значения от 100 до 900.<br />
+        5. color: Определяет цвет текста. Можно использовать названия цветов,
+        HEX-коды или RGB.<br />
+        6. background-color: Задаёт цвет фона за текстом<br />
+        7. text-align: Выравнивает текст внутри элемента. Возможные значения:
+        left, center, right, justify.<br />
+
+        <br /><br />
+      </p>
+      <h2>Задание 1</h2>
+      <p>
+        На экране уже есть текст класса .text-test. Ваша задача — стилизовать
+        этот текст с помощью CSS. Измените следующие параметры: Шрифт:
+        сделайте его курсивным, 20px; Цвет текста: измените на зелёный. Цвет
+        фона: добавьте светло-серый фон за текстом.
+      </p>
+    </div>
+    <div class="editor">
+      <textarea id="editor"></textarea>
+      <button id="check-button">Проверить</button>
+    </div>
+    <div class="preview" id="preview">
+      <p class="text-test">Супер класс, я верстаю.</p>
+    </div>
+
+    <button class="btn-modal">Подсказка</button>
+  </main>
+
+  <script src="../codemirror/lib/codemirror.js"></script>
+  <script src="../codemirror/mode/css/css.js"></script>
+  <script src="../codemirror/mode/javascript/javascript.js"></script>
+  <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

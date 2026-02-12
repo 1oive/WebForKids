@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+  </head>
+
+  <body>
+    <div class="modal_overlay">
+      <div class="modal">
+        <button class="modal_close" type="button"></button>
+        <div class="modal_text">
+          &lt;table border=&quot;1&quot;&gt; <br />
+          &lt;!-- Атрибут border добавляет рамку --&gt;<br />
+          &lt;tr&gt;<br />
+          &lt;td&gt;1&lt;/td&gt; <br />
+          &lt;td&gt;2&lt;/td&gt; <br />
+          &lt;td&gt;3&lt;/td&gt; <br />
+          &lt;/tr&gt;<br />
+          &lt;tr&gt;<br />
+          &lt;td&gt;4&lt;/td&gt; <br />
+          &lt;td&gt;5&lt;/td&gt; <br />
+          &lt;td&gt;6&lt;/td&gt; <br />
+          &lt;/tr&gt; <br />
+          &lt;tr&gt; <br />
+          &lt;td&gt;7&lt;/td&gt; <br />
+          &lt;td&gt;8&lt;/td&gt;<br />
+          &lt;td&gt;9&lt;/td&gt; <br />
+          &lt;/tr&gt; <br />
+          &lt;/table&gt; <br />
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="task">
+        <p>
+          Таблицы в HTML позволяют организовывать информацию в виде строк и
+          столбцов, что делает её более структурированной и удобной для
+          восприятия. С их помощью можно создавать расписания, сравнительные
+          характеристики, списки задач и многое другое. <br />
+          <br />
+          • Тег (&lt;table&gt;): Определяет саму таблицу.<br />
+          • Тег (&lt;tr&gt;): (table row): Обозначает строку в таблице.<br />
+          • Тег (&lt;td&gt;): (table data): Указывает ячейку внутри строки.<br />
+          • Тег (&lt;th&gt;): (table header): Используется для создания
+          заголовков таблицы (обычно текст в этих ячейках жирный и
+          центрированный).<br />
+        </p>
+        <h2>Задание 1</h2>
+        <p>
+          Создайте таблицу размером 3x3, заполненную числами от 1 до 9. Каждая
+          ячейка должна содержать одно число, начиная с верхней левой ячейки и
+          заканчивая нижней правой.
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <button id="check-button">Проверить</button>
+      </div>
+      <div class="preview" id="preview"></div>
+
+      <button class="btn-modal">Подсказка</button>
+    </main>
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/css/css.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

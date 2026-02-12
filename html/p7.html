@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML7</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+  </head>
+
+  <body>
+    <div class="modal_overlay">
+      <div class="modal">
+        <button class="modal_close" type="button"></button>
+        <div class="modal_text">
+          &lt;!-- Шапка --&gt; <br />
+          &lt;header style="background-image: none;"&gt; <br />
+          &lt;h1&gt;Мой сайт&lt;/h1&gt; <br />
+          &lt;p&gt;Добро пожаловать на мой сайт!&lt;/p&gt; <br />
+          &lt;/header&gt; <br />
+
+          &lt;!-- Навигация --&gt; <br />
+          &lt;nav&gt; <br />
+          &lt;ul&gt; <br />
+          &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Главная&lt;/a&gt;&lt;/li&gt;
+          <br />
+          &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;Обо
+          мне&lt;/a&gt;&lt;/li&gt; <br />
+          &lt;li&gt;&lt;a
+          href=&quot;#contact&quot;&gt;Контакты&lt;/a&gt;&lt;/li&gt; <br />
+          &lt;/ul&gt; <br />
+          &lt;/nav&gt; <br />
+
+          &lt;!-- Основной контент --&gt; <br />
+          &lt;main&gt; <br />
+          &lt;section id=&quot;about&quot;&gt; <br />
+          &lt;h2&gt;Обо мне&lt;/h2&gt; <br />
+          &lt;p&gt;Привет! Я создатель этого сайта. Здесь вы найдете интересные
+          статьи и материалы.&lt;/p&gt; <br />
+          &lt;/section&gt; <br />
+          &lt;/main&gt; <br />
+
+          &lt;!-- Подвал --&gt; <br />
+          &lt;footer&gt; <br />
+          &lt;p&gt;&amp;copy; 2025 Мой сайт. Все права защищены.&lt;/p&gt;
+          <br />
+          &lt;/footer&gt;
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="task">
+        <p>
+          HTML предоставляет специальные теги для создания логических разделов
+          на странице, что делает код более структурированным и понятным. Это
+          особенно важно для больших проектов, где нужно четко разделять
+          заголовки, основное содержимое, навигацию и подвал. Использование этих
+          тегов не только помогает вам организовать код, но и улучшает
+          доступность сайта для поисковых систем и пользователей с ограниченными
+          возможностями.
+          <br />
+          • &lt;header&gt;: Обозначает верхнюю часть страницы или раздела,
+          обычно содержит логотип, название сайта или навигационное меню.<br />
+          • &lt;nav&gt;: ДИспользуется для создания блока навигации (меню),
+          содержащего ссылки на другие страницы или разделы текущей страницы.<br />
+          • &lt;main&gt;: Главный контент страницы. Этот тег должен быть только
+          один на странице и содержать наиболее важную информацию.<br />
+          • &lt;section&gt;: Представляет собой самостоятельный раздел страницы
+          (например, статью, блок с услугами или галерею). Каждая секция может
+          иметь свой заголовок.<br />
+          • &lt;footer&gt;: Подвал страницы или раздела, обычно содержит
+          контактную информацию, ссылки на соцсети или копирайт.<br />
+          <br />
+        </p>
+        <h2>Задание 1</h2>
+        <p>
+          Создайте базовую структуру веб-страницы, используя теги
+          &lt;header&gt;, &lt;nav&gt;, &lt;main&gt; с вложенной секцией
+          &lt;section&gt;, и &lt;footer&gt;. Внутри &lt;section&gt; добавьте
+          простой текст или список, чтобы продемонстрировать его использование.
+          <br />
+          Помните, что эти теги сами по себе не меняют внешний вид страницы, но
+          они важны для правильной организации кода и будущего стилизования с
+          помощью CSS.
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <button id="check-button">Проверить</button>
+      </div>
+      <div class="preview" id="preview"></div>
+
+      <button class="btn-modal">Подсказка</button>
+    </main>
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/css/css.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

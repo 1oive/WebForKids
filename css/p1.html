@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>css1</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="../codemirror/lib/codemirror.js"></script>
+  <script src="../codemirror/mode/javascript/javascript.js"></script>
+  <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+</head>
+
+<body>
+  <div class="modal_overlay">
+    <div class="modal">
+      <button class="modal_close" type="button"></button>
+      <div class="modal_text">
+        .triangle { <br />
+        background-color: green; <br />
+        }
+      </div>
+    </div>
+  </div>
+
+  <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+  <main>
+    <div class="task">
+      <p>
+        CSS (Cascading Style Sheets) — это язык стилей, который используется
+        для оформления веб-страниц, созданных с помощью HTML. Если HTML
+        определяет структуру страницы, то CSS отвечает за её внешний вид:
+        цвета, шрифты, размеры и расположение элементов. <br /><br />
+        Для применения CSS можно использовать три способа: <br />
+        1. Внутренний стиль (style атрибут внутри тега). <br />
+        2. &lt;style&gt; блок в HTML-документе. <br />
+        3. Отдельный файл .css, подключаемый через &lt;link&gt;.<br /><br />
+        Один из важных способов работы с CSS — использование классов. Класс
+        позволяет выбрать конкретный элемент или группу элементов на странице
+        и применить к ним определённые стили. Для этого используется точка
+        перед названием класса: .classname.
+      </p>
+      <h2>Задание 1</h2>
+      <p>
+        На экране уже есть треугольник, созданный с помощью CSS и HTML. Ваша
+        задача — обратиться к нему через класс .triangle и изменить его
+        фоновый цвет на зелёный (green). <br /><br />
+        .triangle {<br />
+        background-color: <Название цвета>;<br />
+          }
+      </p>
+    </div>
+    <div class="editor">
+      <textarea id="editor"></textarea>
+      <button id="check-button">Проверить</button>
+    </div>
+    <div class="preview" id="preview">
+      <div class="triangle" style="
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          "></div>
+    </div>
+
+    <button class="btn-modal">Подсказка</button>
+  </main>
+
+  <script src="../codemirror/lib/codemirror.js"></script>
+  <script src="../codemirror/mode/css/css.js"></script>
+  <script src="../codemirror/mode/javascript/javascript.js"></script>
+  <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

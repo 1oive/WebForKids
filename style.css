@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Consolas";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  background-image: url("/assets/img/pc_workspace.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+  padding: 20px 40px;
+  height: 200px;
+  align-items: center;
+}
+.header-logo {
+  width: 400px;
+  height: auto;
+}
+header ul {
+  list-style-type: none;
+  margin-left: 100px;
+}
+header li {
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  margin-right: 50px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  gap: 30px;
+}
+.main-logo {
+  margin-top: 20px;
+  font-size: 34px;
+}
+.modules {
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 70px;
+  row-gap: 40px;
+}
+.module {
+  display: block;
+  border-radius: 20px;
+  padding: 20px 30px;
+  border: 3px solid;
+}
+.module hr {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}

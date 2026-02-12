@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>css6</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="../codemirror/lib/codemirror.js"></script>
+  <script src="../codemirror/mode/javascript/javascript.js"></script>
+  <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+</head>
+
+<body>
+  <div class="modal_overlay">
+    <div class="modal">
+      <button class="modal_close" type="button"></button>
+      <div class="modal_text">
+        @media (max-width: 2000px) {<br />
+        .adaptive-box {<br />
+        width: 400px; <br />
+        background-color: green; <br />
+        } <br />
+        }
+      </div>
+    </div>
+  </div>
+
+  <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+  <main>
+    <div class="task">
+      <p>
+        Адаптивный дизайн позволяет веб-сайтам выглядеть одинаково хорошо на
+        устройствах с разными размерами экрана, будь то десктоп, планшет или
+        мобильный телефон. Для этого используется технология медиа-запросов
+        (media queries), которая позволяет применять определённые стили только
+        при выполнении конкретных условий, таких как ширина экрана.<br /><br />
+
+        Медиа-запросы — это инструмент CSS, который позволяет применять стили
+        только тогда, когда выполняются определённые условия (например, ширина
+        экрана меньше или больше определённого значения).
+        <br />
+        Примеры:
+        <br />
+        @media (max-width: 1000px) — применяется, если ширина экрана меньше
+        или равна 1000 пикселей.
+        <br />
+        @media (min-width: 1000px) — применяется, если ширина экрана больше
+        или равна 1000 пикселей.
+        <br />
+        <br /><br />
+      </p>
+      <h2>Задание 1</h2>
+      <p>
+        На экране уже есть &lt;div&gt; с классом .adaptive-box, который имеет
+        определённые стили для десктопной версии сайта. Ваша задача — создать
+        медиа-запрос для экранов шириной более 1000px и изменить следующие
+        свойства элемента: увеличить ширину до 400px; Изменить цвет фона на
+        зелёный (green).
+      </p>
+    </div>
+    <div class="editor">
+      <textarea id="editor"></textarea>
+      <button id="check-button">Проверить</button>
+    </div>
+    <div class="preview" id="preview" style="position: relative">
+      <div class="adaptive-box">Это адаптивный блок</div>
+    </div>
+
+    <button class="btn-modal">Подсказка</button>
+  </main>
+
+  <script src="../codemirror/lib/codemirror.js"></script>
+  <script src="../codemirror/mode/css/css.js"></script>
+  <script src="../codemirror/mode/javascript/javascript.js"></script>
+  <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

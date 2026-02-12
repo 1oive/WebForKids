@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS3</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+  </head>
+
+  <body>
+    <div class="modal_overlay">
+      <div class="modal">
+        <button class="modal_close" type="button"></button>
+        <div class="modal_text">
+          let number = 11;<br />
+          if (number % 2 === 0) {<br />
+          document.write("Число четное");<br />
+          } else {<br />
+          document.write("Число нечетное");<br />
+          }
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="task">
+        <p>
+          Условные операторы в JavaScript позволяют выполнять разные действия в
+          зависимости от значения условия. Например, с их помощью можно
+          проверить, является ли число четным или нечетным. Для этого
+          используется оператор % (остаток от деления), который помогает
+          определить, делится ли число на другое без остатка.
+        </p>
+        <p>
+          Условный оператор if{...}else{...} позволяет выполнять разные блоки
+          кода в зависимости от того, истинно (true) или ложно (false) условие.
+        </p>
+        <br />
+        <p>
+          Оператор % возвращает остаток от деления одного числа на другое. Если
+          число делится на 2 без остатка (число % 2 === 0), то оно является
+          четным.
+        </p>
+
+        <br /><br />
+        <h2>Задание 1</h2>
+        <p>
+          Ваша задача — поместить число в переменную, проверить, является ли оно
+          четным, и вывести соответствующее сообщение на экран с помощью
+          document.write.
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <button id="check-button">Проверить</button>
+      </div>
+      <div class="preview" id="preview"></div>
+
+      <button class="btn-modal">Подсказка</button>
+    </main>
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/css/css.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

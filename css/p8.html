@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css8</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+  </head>
+
+  <body>
+    <div class="modal_overlay">
+      <div class="modal">
+        <button class="modal_close" type="button"></button>
+        <div class="modal_text">
+          .container-test {<br />
+          display: grid; <br />
+          grid-template-columns: 1fr 1fr; <br />
+          gap: 10px; <br />
+          }
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="task">
+        <p>
+          Grid (CSS Grid Layout) — это мощный инструмент для создания сложных и
+          гибких макетов веб-страниц. Он позволяет организовать элементы в
+          двумерной сетке, где можно контролировать как строки, так и столбцы.
+          Grid особенно полезен для создания адаптивных макетов, где важно точно
+          размещать элементы на странице.<br /><br />
+
+          Контейнер - это родительский элемент, которому мы применяем display:
+          grid;. Все дочерние элементы внутри него становятся "элементами Grid".
+          <br />
+          Элементы Grid - дочерние элементы внутри контейнера. Их расположение и
+          поведение зависят от настроек контейнера.
+          <br /><br />
+          Основные свойства:
+          <br />
+          grid-template-columns: <br />
+          - grid-template-columns: 1fr 1fr; — создаст два равных столбца.<br />
+          - grid-template-columns: 200px 1fr; — первый столбец будет иметь
+          фиксированную ширину 200px, второй займет оставшееся пространство.
+          <br />
+          grid-template-rows: <br />
+          - Определяет количество и размер строк в сетке. Работает аналогично
+          grid-template-columns.
+          <br />
+          gap: <br />
+          - Задаёт пространство между элементами сетки. Можно использовать
+          row-gap (между строками) и column-gap (между столбцами).
+
+          <br />
+          <br /><br />
+        </p>
+        <h2>Задание 1</h2>
+        <p>
+          На экране уже есть &lt;div&gt; с классом .container-test, который
+          имеет шесть блоков, расположенных друг под другом: .box-child . Ваша
+          задача — преобразить этот контейнер в Grid-контейнер и выстроить блоки
+          в два столбца. Также добавьте пространство между столбцами с помощью
+          свойства gap.
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <button id="check-button">Проверить</button>
+      </div>
+      <div class="preview" id="preview" style="position: relative">
+        <div class="container-test">
+          <div
+            class="box-child"
+            style="height: 100px; width: 100px; background-color: green"
+          ></div>
+          <div
+            class="box-child"
+            style="height: 100px; width: 100px; background-color: red"
+          ></div>
+          <div
+            class="box-child"
+            style="height: 100px; width: 100px; background-color: green"
+          ></div>
+          <div
+            class="box-child"
+            style="height: 100px; width: 100px; background-color: red"
+          ></div>
+          <div
+            class="box-child"
+            style="height: 100px; width: 100px; background-color: green"
+          ></div>
+          <div
+            class="box-child"
+            style="height: 100px; width: 100px; background-color: red"
+          ></div>
+        </div>
+      </div>
+
+      <button class="btn-modal">Подсказка</button>
+    </main>
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/css/css.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

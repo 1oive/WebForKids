@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css" />
+  </head>
+
+  <body>
+    <div class="modal_overlay">
+      <div class="modal">
+        <button class="modal_close" type="button"></button>
+        <div class="modal_text">
+          <h4>
+            &lt;h1&gt;Моя учеба&lt;/h1&gt; <br />
+            &lt;h2&gt;Что я изучаю&lt;/h2&gt; <br />
+            &lt;h3&gt;Программирование&lt;/h3&gt; <br />
+            &lt;p&gt;Программирование учит меня создавать интересные
+            проекты.&lt;/p&gt; <br />
+            &lt;h2&gt;Мои хобби&lt;/h2&gt; <br />
+            &lt;h3&gt;Рисование&lt;/h3&gt; <br />
+            &lt;p&gt;Рисование помогает мне развивать фантазию.&lt;/p&gt; <br />
+            &lt;h3&gt;Музыка&lt;/h3&gt; <br />
+            &lt;p&gt;Музыка приносит мне радость и вдохновение.&lt;/p&gt; <br />
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <img src="../assets/img/logo.png" class="header-logo" />
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../html_hub.html">HTML</a></li>
+        <li><a href="../css_hub.html">CSS</a></li>
+        <li><a href="../JS_hub.html">JS</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="task">
+        <p>
+          HTML позволяет создавать заголовки разных уровней с помощью
+          специальных тегов &lt;h1&gt; до &lt;h6&gt;. Каждый уровень отражает
+          важность заголовка: &lt;h1&gt; используется для главного заголовка
+          страницы, а &lt;h6&gt; — для наименее значимых подзаголовков. Также
+          для обычного текста применяется тег &lt;p&gt;, который обозначает
+          параграф или абзац.
+        </p>
+        <h2>Задание 2</h2>
+        <p>
+          Создайте структуру текста, используя заголовки разных уровней и
+          несколько абзацев. Отразите следующую иерархию: <br />
+
+          Основной заголовок (&lt;h1&gt;): &quot;Моя учеба&quot;. <br />
+          1.1. Подзаголовок первого уровня (&lt;h2&gt;): &quot;Что я
+          изучаю&quot;. <br />
+          1.1.1. Подзаголовок второго уровня (&lt;h3&gt;):
+          &quot;Программирование&quot;. <br />
+          1.2. Подзаголовок первого уровня (&lt;h2&gt;): &quot;Мои хобби&quot;.
+          <br />
+          1.2.1. Подзаголовок второго уровня (&lt;h3&gt;):
+          &quot;Рисование&quot;. <br />
+          1.2.2. Подзаголовок второго уровня (&lt;h3&gt;): &quot;Музыка&quot;.
+          <br />
+          <br />
+          После каждого подзаголовка добавьте параграф (&lt;p&gt;) с кратким
+          описанием (например, &quot;Я люблю изучать математику, потому что она
+          помогает мне решать сложные задачи&quot;).
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <button id="check-button">Проверить</button>
+      </div>
+      <div class="preview" id="preview"></div>
+
+      <button class="btn-modal">Подсказка</button>
+    </main>
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/css/css.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
